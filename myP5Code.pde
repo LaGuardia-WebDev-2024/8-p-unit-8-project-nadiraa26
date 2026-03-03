@@ -1,22 +1,22 @@
 //🟢setup Function - will run once
 var movingY = 0;
 setup = function() {
-    size(600, 400);
+    size(550, 400);
     background(255,255,255);
     
 };
 
 //🟢draw Function - will run on repeat
 draw = function(){
-background(255,255,255);
+background(255,255,255,0);
 // FIRE
     drawFire(100, 150, 60);
 
     // FIRE
-    drawFire(400, 200, 120);
+    drawFire(350, 190, 120);
 
     // Moving FireMan)
-    drawMovingFireMan(200, movingY, 50);
+    drawMovingFireMan(180, movingY, 60);
 
     movingY = movingY + 1;
 
